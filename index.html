@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas com IA</title>
+    <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0REcFpn3g8otZaCLPSkRVFNYIAtI28793WX42zu5byH2yH7KSiNfdqud3v66w5kgHKoIZ9LGuSaOWZHNl9BKb6vuefHNnLoMfYKkxcmjhFRA-uKSu6BE0Ho8R1rlMV-1XtnPypJwDkqiUwrLq7sPmXB-aVJute3ox_-21-keeeqrDnlc-HPuSopT9ak5GkSLy--AsQO_WlJLak0vstSycvz5KeAJYYdo5Ft8Jm0AuKrx__odMYatW7Son8koaPNYj5ZBZXXdQCtruUbJqRVKkT-nukPfDQ_56A8ReKKAy5_8TLH1i1GISLF6DZxB6aPH_lYRm4EdA1zFpxcfPE_LC_Z7DJYYtKNJ5ru3OLYztlKEabiwveigW_H1b8ix-w2t-DXcIdB1f4Ea34mXmRMgp8yDUf-_KflZ7ytqw1HhRNyZVzkTZUYQ-k08he1fQfXDX0t4ClHSJbLZmXbbyOLlJyiZJeJdI08-a7lfdW5GMd9fNy-18CBhlr0aMhxBAWIsESkMoff7I8FxeQx-XkCGulRN3TzlYuKkl3DWQwJkcg5rcDiiIBxDL_mBvqJya3omF6ZyFlMSqhFgXGPN2APyYd7dWnk1IHM0xkJwJS56Z9o_yNvH5EYNjanZoOXZm4wP2uOKr-lfDcDTAXgTCe9lcmRZeaUkJm550ka84-N1IPTl4fZSqJT33DOBRFV4ShkNGLs3pOosTUpnUwFFeNkqcTPowlk1e_E2M2gYOu5yVKdvEtIQ-ejURSqXaCoA3oKWaQEAwgpi4oBWHQbMeZnleF9cI5LHaLeT-nVT6MCRKMPm3Ya5cW78zYp3BDLs2kca1X-EMaMlnkOzHHR3SdMYd1CiRNURbb6HiTG8SWoYHOPNrKZT3xpi2TArKtvljo_iHAPkTP8970C4WQx9XYpHbq8LiGq5Xh4qZ6DhE5qbHBfd52RTbe2N3tFRyn4QCP9uiprWIW7D-ACYXvYrzigj0PifhAFVlA77KyGzfihu5wV9u58E_fU_utomC4cz8E98oDJcj7lY-f258JRzgyhQ-1oK4cbTU5oC24I7qgNghQWX1fQ76zoaNTDIvzc4RMOSM2i6hpvcqQ94YlzonfOD1Np4xQKhhgcB92g7r2vFxE2XLS6jmI6X4wzvMD832VtevYgsxafrqNgXnzQ8bGcID1sYBixJev61Ore_iY8buYc1vdoFFGu4FgAI-dx69ly8D39EiI6dRgeq73AB1_0p6Ipl9IXZMSKld7M8Ua3ExOAvLXEuyIMCqqXFXTL_E4ndZqWhwrq5U9CUeINUcWmiYQBMssUJmdY4OEHUBVe2ezfPX7bxeofOd46TwISrhvtM5ifVncT7-l58UM7Ut1qi5Yelje0cLb4ipYRcIyN1roSanqJKdXx4udZhERmaCpTrrhNVr9qbfwI4dS3fgpOCwboXd43zk5HsrQFc0-wwnHrd3XMJn4ME-IUh57UyvCMglaLYPaq9rnDI8qXTQrcwtOv9lk7WsIlq65xKBf4l3lAuYS-ysREWAH2m1JgGLl9jO6y28EvLxnF75qWQ84iMktLNnxRIAERgPrb22A93EgfbRAqmFG1Yvwb2Vo_h19ETm1ITJZvJWwXbIwYbpwV3f-GSsttuwSzZfsMxwf3n1Ghyxo0CDd7qbFswChzyd9pYgVmCI35N99Er7KntX_DFS2d7bpUrl83KY3byFjoHVQ4obprg3dyHNoprkDlbhgVQtB_9yH6sQ_c4orTvnqopN-Oo0BNeIPrQkNlYsVcClkBGgsdyiJYjSWg1JIvg7oVLVJxduJLbi7E1_ZIaonPF32cajK99DHB9dmH51_AZcpz4uJR7TIArFlqNsGG_V24qtpOfvD2vPyjInOGj8rYRJxIIDeyg5rfPpU_DEACIhzDBzN3J436JTFMt4ML3_RUyNLjXc8c4Xku26e-JU-x8b7LCYNPLC-Q0R_GZ82rxAzK8GfSdJB8YQ2zhw-quvrbCsCNSE-0aaxgN9FrN8uuStlnI62zc5erdWRdqwXAR7v9JYAxcSMEiR0E4-E4JvkpjH4krgaoitTJgMEL5ISpEEi7TISnEPFv2_ikLAJ0x3EZ6L7DAIH9bcVvY1t8778ADqJwCUdphcwIitQD9QqtIjbEYkEU-hXdm-zjSeHCQHL2l3X7vJiHT_aDSK2ArSjrhByWcP4oLsA3KgoUlGBwfJeDADXkdfV4edcFU0jI9j_N-enWXpOL3wwwQ8tjMjO7j_Sw_TWFgQvi06xHBkdSK7ohq-hz1TXIy3TYxI5Mgv_OBqGN0RZEExxyUNqhFrE-_" charset="UTF-8"></script></head>
+<body>
+    <!-- Login/Register Screen -->
+    <div class="auth-container" id="authContainer">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>Gerenciador de Tarefas</h1>
+                <p>Organize suas tarefas com inteligência</p>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="tabLogin" onclick="window.abrirAbaLogin(); return false;">🔓 Login</button>
+                <button class="auth-tab" id="tabRegistro" onclick="window.abrirAbaRegistro(); return false;">📝 Registrar</button>
+                <button class="auth-tab" id="tabImportar" onclick="window.abrirAbaImportar(); return false;">📤 Importar Dados</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form active" id="abaLoginConteudo">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="seu@email.com" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Senha</label>
+                    <div class="password-input">
+                        <input type="password" class="form-control" id="loginSenha" placeholder="Sua senha" autocomplete="current-password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('loginSenha')">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="auth-error" id="loginError" style="display: none;"></div>
+                <button class="btn btn--primary btn--full-width" id="loginBtn">Entrar</button>
+                <p class="auth-link">Não tem conta? <a href="#" onclick="abrirAbaRegistro(); return false;">Registre-se</a></p>
+            </div>
+            
+            <!-- Import Form -->
+            <div class="auth-form" id="abaImportarConteudo">
+                <div class="form-group">
+                    <label class="form-label">Importar Backup de Dados</label>
+                    <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-16);">Selecione um arquivo JSON exportado anteriormente para restaurar suas tarefas e configurações.</p>
+                    <button class="btn btn--secondary btn--full-width" id="selectImportFileBtn" style="margin-bottom: var(--space-12);">📂 Selecionar Arquivo JSON</button>
+                    <div id="selectedFileName" style="display: none; background-color: var(--color-bg-3); padding: var(--space-12); border-radius: var(--radius-base); margin-bottom: var(--space-12); font-size: var(--font-size-sm);"></div>
+                    <button class="btn btn--primary btn--full-width" id="importLoginBtn" style="display: none;">✓ Importar e Entrar</button>
+                    <input type="file" id="loginImportFileInput" accept=".json" style="display: none;">
+                </div>
+                <div class="auth-error" id="importError" style="display: none;"></div>
+                <div class="auth-success" id="importSuccess" style="display: none;"></div>
+                <p class="auth-link">Já tem conta? <a href="#" onclick="abrirAbaLogin(); return false;">Faça login</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div class="auth-form" id="abaRegistroConteudo">
+                <div class="form-group">
+                    <label class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="registerNome" placeholder="Seu nome completo" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="registerEmail" placeholder="seu@email.com" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Senha</label>
+                    <div class="password-input">
+                        <input type="password" class="form-control" id="registerSenha" placeholder="Mínimo 6 caracteres" autocomplete="new-password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('registerSenha')">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Confirmar Senha</label>
+                    <div class="password-input">
+                        <input type="password" class="form-control" id="registerConfirmSenha" placeholder="Digite a senha novamente" autocomplete="new-password">
+                        <button type="button" class="password-toggle" onclick="togglePassword('registerConfirmSenha')">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="auth-error" id="registerError" style="display: none;"></div>
+                <div class="auth-success" id="registerSuccess" style="display: none;"></div>
+                <button class="btn btn--primary btn--full-width" id="registerBtn">Registrar</button>
+                <p class="auth-link">Já tem conta? <a href="#" onclick="abrirAbaLogin(); return false;">Faça login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sandbox Warning Banner -->
+    <div class="sandbox-warning" id="sandboxWarning" style="display: none;">
+        <div class="sandbox-warning-content">
+            <span class="warning-icon">⚠️</span>
+            <div class="warning-text">
+                <strong>Modo Sandbox Ativo:</strong> Os dados são armazenados em memória e serão perdidos ao fechar o navegador. <strong>Use os botões "📥 Exportar Dados" e "📤 Importar Dados" no menu superior</strong> para fazer backup e restaurar suas informações.
+            </div>
+            <button class="warning-close" onclick="document.getElementById('sandboxWarning').style.display='none'">&times;</button>
+        </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="app-container" id="appContainer" style="display: none;">
+        <!-- User Header -->
+        <div class="user-header">
+            <div class="user-header-content">
+                <h2 class="app-logo">📋 Gerenciador de Tarefas</h2>
+                <div class="user-info">
+                    <span class="user-greeting" id="userGreeting">Olá, Usuário!</span>
+                    <div class="notification-badge" id="notificationBadge" style="display: none;">
+                        <span id="overdueCount">0</span>
+                    </div>
+                    <button class="btn btn--secondary" id="exportDataBtn" title="Exportar seus dados como arquivo JSON">📥 Exportar Dados</button>
+                    <button class="btn btn--secondary" id="importDataBtn" title="Importar dados de um arquivo JSON">📤 Importar Dados</button>
+                    <input type="file" id="importFileInput" accept=".json" style="display: none;">
+                    <button class="btn btn--secondary" id="logoutBtn">Sair</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="minhas-tarefas">Minhas Tarefas</button>
+            <button class="tab-btn" data-tab="tarefas-fixas">Tarefas Fixas</button>
+            <button class="tab-btn" data-tab="conhecer">Quero te Conhecer</button>
+            <button class="tab-btn" data-tab="calendario">Calendário</button>
+            <button class="tab-btn" data-tab="central-ia">Central de IA</button>
+            <button class="tab-btn" data-tab="insights">📊 Insights</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <main class="tab-content">
+            <!-- Minhas Tarefas Tab -->
+            <section class="tab-pane active" id="minhas-tarefas">
+                <div class="section-header">
+                    <h2>Minhas Tarefas</h2>
+                    <button class="btn btn--primary" id="newTaskBtn">+ Nova Tarefa</button>
+                </div>
+
+                <!-- Insights Panel -->
+                <div class="insights-panel" id="insightsPanel">
+                    <h3>Insights de Produtividade</h3>
+                    <div id="insightsContent">Carregando insights...</div>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="form-group">
+                        <label class="form-label">Período:</label>
+                        <select class="form-control" id="filterPeriodo">
+                            <option value="hoje">Hoje</option>
+                            <option value="semana">Esta Semana</option>
+                            <option value="todos">Todas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Status:</label>
+                        <select class="form-control" id="filterStatus">
+                            <option value="todos">Todos</option>
+                            <option value="nao_iniciado">Não Iniciado</option>
+                            <option value="em_andamento">Em Andamento</option>
+                            <option value="concluido">Concluído</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Prioridade:</label>
+                        <select class="form-control" id="filterPrioridade">
+                            <option value="todas">Todas</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Task List -->
+                <div class="task-list" id="taskList">
+                    <p class="empty-state">Nenhuma tarefa encontrada. Clique em "Nova Tarefa" para começar!</p>
+                </div>
+            </section>
+
+            <!-- Tarefas Fixas Tab -->
+            <section class="tab-pane" id="tarefas-fixas">
+                <div class="section-header">
+                    <h2>Tarefas Fixas da Semana</h2>
+                    <button class="btn btn--primary" id="newRecurringTaskBtn">+ Adicionar Tarefa Fixa</button>
+                </div>
+                <div class="recurring-tasks-list" id="recurringTasksList">
+                    <p class="empty-state">Nenhuma tarefa fixa cadastrada.</p>
+                </div>
+            </section>
+
+            <!-- Quero te Conhecer Tab -->
+            <section class="tab-pane" id="conhecer">
+                <div class="section-header">
+                    <h2>Quero te Conhecer</h2>
+                </div>
+                <div class="wizard-container" id="wizardContainer">
+                    <div class="wizard-step" id="wizardStep">
+                        <p class="wizard-question" id="wizardQuestion"></p>
+                        <div class="wizard-input" id="wizardInput"></div>
+                        <div class="wizard-buttons">
+                            <button class="btn btn--secondary" id="wizardPrev" style="display: none;">← Voltar</button>
+                            <button class="btn btn--primary" id="wizardNext">Próxima →</button>
+                        </div>
+                    </div>
+                    <div class="wizard-results" id="wizardResults" style="display: none;">
+                        <h3>Suas Preferências</h3>
+                        <div id="preferencesDisplay"></div>
+                        <h3>Sugestões Personalizadas</h3>
+                        <div id="suggestionsDisplay"></div>
+                        <button class="btn btn--primary" id="restartWizard">Refazer Questionário</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendário Tab -->
+            <section class="tab-pane" id="calendario">
+                <div class="section-header">
+                    <h2>Calendário Semanal</h2>
+                    <div class="week-navigation">
+                        <button class="btn btn--secondary" id="prevWeek">← Semana Anterior</button>
+                        <span id="currentWeek">Semana Atual</span>
+                        <button class="btn btn--secondary" id="nextWeek">Próxima Semana →</button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div class="calendar-legend">
+                    <div class="legend-item"><span style="display: inline-block; width: 16px; height: 16px; background: rgba(33, 150, 243, 0.15); border-left: 4px solid #2196F3; border-radius: 3px;"></span> Tarefas Novas (Azul)</div>
+                    <div class="legend-item"><span style="display: inline-block; width: 16px; height: 16px; background: rgba(76, 175, 80, 0.15); border-left: 4px solid #4CAF50; border-radius: 3px;"></span> Tarefas Fixas (Verde)</div>
+                    <div class="legend-item"><span class="status-dot status-nao-iniciado"></span> Não Iniciado</div>
+                    <div class="legend-item"><span class="status-dot status-em-andamento"></span> Em Andamento</div>
+                    <div class="legend-item"><span class="status-dot status-concluido"></span> Concluído</div>
+                </div>
+            </section>
+
+            <!-- Central de IA Tab -->
+            <section class="tab-pane" id="central-ia">
+                <div class="section-header">
+                    <h2>Central de IA</h2>
+                </div>
+                <div class="ai-container">
+                    <div class="ai-examples">
+                        <p><strong>Exemplos de perguntas:</strong></p>
+                        <ul>
+                            <li>"Quais são minhas tarefas de hoje?"</li>
+                            <li>"Em que devo focar primeiro?"</li>
+                            <li>"Quais tarefas estão mais perto do prazo?"</li>
+                            <li>"Quais tarefas tenho esta semana?"</li>
+                            <li>"Me mostre meu dia de hoje"</li>
+                        </ul>
+                    </div>
+                    <div class="ai-chat" id="aiChat"></div>
+                    <div class="ai-input-container">
+                        <input type="text" class="form-control" id="aiInput" placeholder="Faça uma pergunta sobre suas tarefas...">
+                        <button class="btn btn--primary" id="aiSendBtn">Enviar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Insights de Produtividade Tab -->
+            <section class="tab-pane" id="insights">
+                <div class="section-header">
+                    <h2>📊 Insights de Produtividade</h2>
+                </div>
+
+                <!-- Métricas Resumidas -->
+                <div class="metricas-resumo">
+                    <div class="metrica-card">
+                        <h3>Total de Tarefas</h3>
+                        <p id="totalTarefas" class="numero-grande">0</p>
+                        <span class="label">Novas + Fixas</span>
+                    </div>
+                    <div class="metrica-card">
+                        <h3>Concluídas</h3>
+                        <p id="tarefasConcluidas" class="numero-grande" style="color: #4CAF50;">0</p>
+                        <span class="label">Taxa de sucesso</span>
+                    </div>
+                    <div class="metrica-card">
+                        <h3>Pendentes</h3>
+                        <p id="tarefasPendentes" class="numero-grande" style="color: #FF9800;">0</p>
+                        <span class="label">Aguardando ação</span>
+                    </div>
+                    <div class="metrica-card">
+                        <h3>Atrasadas</h3>
+                        <p id="tarefasAtrasadas" class="numero-grande" style="color: #F44336;">0</p>
+                        <span class="label">Requer atenção</span>
+                    </div>
+                </div>
+
+                <!-- Ranking de Tarefas Pendentes -->
+                <div class="secao-ranking">
+                    <h3>🎯 Ranking de Tarefas Pendentes</h3>
+                    <p class="descricao-ranking">Classificadas por prioridade e data de entrega</p>
+                    <table class="tabela-ranking">
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Tarefa</th>
+                                <th>Tipo</th>
+                                <th>Data Entrega</th>
+                                <th>Prioridade</th>
+                                <th>Status</th>
+                                <th>Dias Restantes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpuTabelaRanking">
+                            <!-- Preenchida por JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Insights Personalizados -->
+                <div class="secao-insights-txt">
+                    <h3>💡 Insights Personalizados</h3>
+                    <div id="containerInsightsTxt" class="insights-txt">
+                        <!-- Preenchida por JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal: Nova Tarefa -->
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Nova Tarefa</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Descreva sua tarefa em linguagem natural:</label>
+                    <textarea class="form-control" id="naturalLanguageInput" rows="3" placeholder="Ex: Enviar relatório amanhã às 15h"></textarea>
+                    <button class="btn btn--secondary" id="parseNaturalBtn" style="margin-top: 8px;">Interpretar</button>
+                </div>
+
+                <div class="form-divider">ou preencha manualmente:</div>
+
+                <div class="form-group">
+                    <label class="form-label">Título *</label>
+                    <input type="text" class="form-control" id="taskTitulo" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Descrição</label>
+                    <textarea class="form-control" id="taskDescricao" rows="2"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Data *</label>
+                        <input type="date" class="form-control" id="taskData" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Horário</label>
+                        <input type="time" class="form-control" id="taskHorario">
+                    </div>
+
+                <div class="form-group">
+                    <label class="form-label">Hora de Conclusão</label>
+                    <input type="time" class="form-control" id="taskHoraConclusao">
+                </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Prazo Final</label>
+                        <input type="date" class="form-control" id="taskPrazo">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Prioridade</label>
+                        <select class="form-control" id="taskPrioridade">
+                            <option value="baixa">Baixa</option>
+                            <option value="media" selected>Média</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Status</label>
+                    <select class="form-control" id="taskStatus">
+                        <option value="nao_iniciado" selected>Não Iniciado</option>
+                        <option value="em_andamento">Em Andamento</option>
+                        <option value="concluido">Concluído</option>
+                    </select>
+                </div>
+
+                <div id="parsedSummary" class="parsed-summary" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--secondary" id="cancelTaskBtn">Cancelar</button>
+                <button class="btn btn--primary" id="saveTaskBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Tarefa Fixa -->
+    <div class="modal" id="recurringTaskModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="recurringModalTitle">Nova Tarefa Fixa</h3>
+                <button class="modal-close" id="closeRecurringModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Título *</label>
+                    <input type="text" class="form-control" id="recurringTitulo" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Descrição</label>
+                    <textarea class="form-control" id="recurringDescricao" rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Dias da Semana</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" value="seg" class="recurring-day"> Segunda</label>
+                        <label><input type="checkbox" value="ter" class="recurring-day"> Terça</label>
+                        <label><input type="checkbox" value="qua" class="recurring-day"> Quarta</label>
+                        <label><input type="checkbox" value="qui" class="recurring-day"> Quinta</label>
+                        <label><input type="checkbox" value="sex" class="recurring-day"> Sexta</label>
+                        <label><input type="checkbox" value="sab" class="recurring-day"> Sábado</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Hora Início</label>
+                        <input type="time" class="form-control" id="recurringHoraInicio">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Hora Conclusão</label>
+                        <input type="time" class="form-control" id="recurringHoraConclusao">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Prioridade</label>
+                    <select class="form-control" id="recurringPrioridade">
+                        <option value="baixa">Baixa</option>
+                        <option value="media" selected>Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Status</label>
+                    <select class="form-control" id="recurringStatus">
+                        <option value="nao_iniciado" selected>⚪ Não Iniciado</option>
+                        <option value="em_andamento">🟡 Em Andamento</option>
+                        <option value="concluido">🟢 Concluído</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--secondary" id="cancelRecurringBtn">Cancelar</button>
+                <button class="btn btn--primary" id="saveRecurringBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Tarefas Atrasadas -->
+    <div class="modal" id="overdueModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tarefas Atrasadas</h3>
+                <button class="modal-close" id="closeOverdueModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="overdueTasksList"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--secondary" id="closeOverdueBtn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
